@@ -4,15 +4,13 @@ import {
   Dialog,
   DialogContent,
   DialogTrigger,
-  DialogFooter,
-  DialogClose
 } from "@/components/ui/dialog"
 
 import { EmailForm } from "./EmailForm"
 import classes from "./EmailDialog.module.css" 
 
 export function EmailDialog() {
- let close =''
+//  let close =''
 
   return (
    

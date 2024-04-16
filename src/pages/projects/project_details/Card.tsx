@@ -1,6 +1,5 @@
 
 
-import { github } from "@/components/shared/skills";
 import {
   CardBody,
   CardContainer,

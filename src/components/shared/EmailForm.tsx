@@ -18,7 +18,7 @@ const [status,setStatus] = useState('');
           publicKey: "nsGj0-_RuPx7UhfE_",
         })
         .then(
-          (response) => {
+          () => {
           //  console.log(response.text);
           setStatus("success");
           })

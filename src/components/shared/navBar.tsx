@@ -1,6 +1,6 @@
 import { Link } from "react-scroll";
 import classes from "./navBar.module.css";
-import { useContext, useState } from "react";
+import { useContext } from "react";
 import { Context } from "@/utils/Context";
 
 function navBar() {
