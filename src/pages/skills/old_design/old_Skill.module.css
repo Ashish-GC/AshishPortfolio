@@ -1,0 +1,48 @@
+.main{
+    width: 100vw;
+    height:100vh;
+    border:2px solid green;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    flex-direction: column;
+}
+
+.heading{
+    margin-top: 5rem;
+    font-size: 2rem;
+}
+.container{
+ height:35rem;
+ width: 60rem;
+ border:2px solid white;
+ position: relative;
+  display: grid;
+  grid-template-columns: repeat(8,auto);
+  z-index: -1;
+  
+}
+ .container div{
+    border:2px solid white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   z-index: -1; 
+ }
+ .container .space{
+    grid-row: 3 / span 2;
+    grid-column: 4 / span 2;
+ }
+ .container div img{
+     height:3.5rem;
+     width: 3.5rem;
+     animation: floating 3s infinite  ease-in-out;
+    
+}
+@Keyframes floating{
+     from {transform: translate(0px,0px);}
+     65% {transform: translate(10px,10px);}
+     to  {transform: translate(0px,0px);}
+
+}
+

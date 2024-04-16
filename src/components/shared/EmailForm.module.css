@@ -1,0 +1,98 @@
+
+.container{
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ flex-direction: column;
+}
+.form{
+display: flex;
+flex-direction: column;
+gap: 10px;
+  margin: 10px;
+}
+.form div label{
+    font-size: 0.8rem;
+    color: black;
+}
+.form  div input{
+    font-size: 0.8rem;
+    border: 2px solid rgb(120, 118, 118);
+    width: 100%;
+    min-height: 1.9rem;
+}
+.form div textarea{
+    font-size: 0.8rem;
+    border: 2px solid rgb(120, 118, 118); 
+    height: 6rem;
+    max-height: 6rem;
+    width: 100%;
+}
+.form button{
+   width: 6rem;
+  margin: auto;
+  height: 2.7rem;
+}
+.form div p{
+    font-size: 0.6rem; 
+    color: red;
+}
+
+
+
+.send{
+    color: white;
+    background-color: rgb(121, 119, 123);
+    padding: 5px 20px 5px 20px;
+     height: 2.5rem;   
+     border-radius: 4px;
+}
+.send:hover{
+    border: 2px solid white;
+}
+.send:active{
+    transform: translateY(2px);
+}
+
+
+@media screen and (max-width: 1024px) { 
+
+  
+    
+    }
+
+@media screen and (max-width: 480px) { 
+       .form{
+       gap: 8px;
+         margin: 8px;
+       }
+       .form div label{
+           font-size: 0.7rem;
+        
+       }
+       .form  div input{
+           font-size: 0.8rem;
+           border: 2px solid rgb(120, 118, 118);
+           min-height: 1.4rem;
+       }
+       .form div textarea{
+           font-size: 0.8rem;
+           border: 2px solid rgb(120, 118, 118); 
+           height: 3rem;
+           max-height: 5rem;
+           width: 100%;
+       }
+       .form button{
+        width: 6rem;
+       margin: auto;
+       height: 1.7rem;
+     }
+         
+       .send{
+           padding: 5px 10px 5px 10px;
+            height: 1rem;   
+            border-radius: 4px;
+            font-size: 12px;
+       }
+
+}

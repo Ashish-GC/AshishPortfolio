@@ -1,0 +1,86 @@
+.main{
+    width: 100vw;
+    height:100vh;
+    display: flex;
+    flex-direction: column;
+}
+.heading{
+        flex: 19%;
+     /* border:2px solid yellow; */
+        display: flex;
+      align-items: flex-end;
+}
+ .hcontent{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    /* border: 2px solid white; */
+    width:100vw;
+    margin:0 2rem 0 2rem;
+}
+.top{
+    color: rgb(86, 255, 25);
+    font-size: 0.8rem;
+}
+
+.nav {
+   /* //h1 and button */
+   display: flex;
+   justify-content: center;
+   flex-direction:row;
+    justify-content:space-between;
+   border: 2px solid black;
+}
+
+.nav p{
+      font-size: 1.5rem;
+}
+.nav button{
+       border: 2px solid green;
+       font-size: 0.8rem;
+       padding: 5px 20px 5px 20px;
+       height: 2.5rem;
+}
+
+
+.container{
+     flex:81%;
+     padding:1rem 10rem 1rem 10rem; 
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+} 
+
+
+@media screen and (max-width: 1024px) { 
+
+    .hcontent{
+        margin:0 1rem 0 1rem;
+    }
+    .top{
+        font-size: 0.6rem;
+    }
+    .nav p{
+          font-size: 1rem;
+    }
+    .container{
+        padding:0 4rem 0 4rem; 
+   } 
+}
+
+@media screen and (max-width: 480px) { 
+     .hcontent{
+        margin:0 1rem 0 1rem;
+    }
+    .top{
+        font-size: 0.6rem;
+    }
+    .nav p{
+          font-size: 1rem;
+    }
+    .container{
+        padding:0 4rem 0 4rem; 
+   } 
+   
+}
+

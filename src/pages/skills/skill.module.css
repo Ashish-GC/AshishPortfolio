@@ -1,0 +1,271 @@
+
+
+@property --rotate {
+    syntax: "<angle>";
+    initial-value: 132deg;
+    inherits: false;
+  }
+
+.main{
+    width: 100vw;
+    height:100vh;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    flex-direction: column;
+}
+
+.heading{
+    margin-top: 4rem;
+    font-size: 2rem;
+    animation: 5s infinite alternate colors;
+}
+@keyframes colors {
+    0% { color: white;}
+    45%{ color: rgb(86, 255, 25);}
+    99% {color: white;}
+  }
+
+.container{
+ margin-top: 1rem;
+ height:35rem;
+ width: 60rem;
+ /* border:2px solid purple; */
+ display: grid;
+ grid-template-columns: auto auto ;
+grid-template-rows:auto auto;
+gap: 1rem;
+}
+.frontend{
+   display: flex;
+   flex-direction: column; 
+   gap: 1rem;
+   justify-content: center;
+   align-items: center;
+   background: #191c29;
+   position: relative;
+   border-radius: 6px;
+}
+  
+  
+  .frontend::before {
+    content: "";
+    width: 99%;
+    height: 99%;
+    border-radius: 8px;
+    background-image: linear-gradient(
+      var(--rotate)
+      ,#5ddcff, #3c67e3 43%, #4e00c2);
+      z-index: -10;
+      top: 2%;
+      left: 2%;
+      position: absolute;
+      animation: spin 2.5s linear infinite;
+  }
+  .frontend:hover{
+    z-index: 1;
+  }
+ 
+.backend{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+   justify-content: center;
+   align-items: center;
+   background: #191c29;
+   position: relative;
+   border-radius: 6px;
+}
+  
+.backend::before {
+    content: "";
+    width: 99%;
+    height: 99%;
+    border-radius: 8px;
+    background-image: linear-gradient(
+      var(--rotate)
+      ,#5ddcff, #3c67e3 43%, #4e00c2);
+      z-index: -10;
+      position: absolute;
+      top: 2%;
+      left: 2%;
+      animation: spin 2.5s linear infinite;
+  }
+  .backend:hover{
+    z-index: 1;
+  }
+  
+.framework{
+  
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+    background: #191c29;
+    position: relative;
+    border-radius: 6px;
+}
+  
+.framework::before {
+    content: "";
+    width: 99%;
+    height: 99%;
+    border-radius: 8px;
+    background-image: linear-gradient(
+      var(--rotate)
+      , #5ddcff, #3c67e3 43%, #4e00c2);
+      z-index: -10;
+      top: 2%;
+      left: 2%;
+      position: absolute;
+      animation: spin 2.5s linear infinite;
+  }
+.framework:hover{
+  z-index: 1;
+}
+  
+.tool{
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+ justify-content: center;
+ align-items: center;
+ background: #191c29;
+ position: relative;
+ border-radius: 6px;
+}
+.tool:hover{
+  z-index: 1;
+}
+  
+.tool::before {
+    content: "";
+    width: 99%;
+    height: 99%;
+    border-radius: 8px;
+    background-image: linear-gradient(
+      var(--rotate)
+      ,#5ddcff, #3c67e3 43%, #4e00c2);
+      z-index: -10;
+      position: absolute;
+      top: 2%;
+      left: 2%;
+      animation: spin 2.5s linear infinite;
+  }
+  
+
+  
+  @keyframes spin {
+    0% {
+      --rotate: 0deg;
+    }
+    99% {
+      --rotate: 360deg;
+    }
+  }
+
+
+.container h1{
+    font-size: larger;
+}
+
+@media screen and (max-width: 1024px){
+  .main{
+    width: 100vw;
+    height:100vh;
+    display: flex;
+    justify-content:flex-start;
+        
+    flex-direction: column;
+}
+
+.heading{
+   margin-top: 0px;
+  font-size: 1.5rem;
+}
+
+.container{
+margin-top: 10px;
+height: 80%;
+width: 80%;
+gap: 1rem;
+}
+.frontend{
+ gap: 10px;
+}
+
+
+.backend{
+  gap: 10px;
+}
+
+
+
+.framework{
+  gap: 10px;
+}
+
+
+.tool{
+  gap: 10px;
+}
+
+.container h1{
+  font-size: 16px;
+}
+.container li{
+  font-size: 11px;
+}
+
+}
+
+@media screen and (max-width: 480px){
+  .main{
+    width: 100vw;
+    height:100vh;
+    display: flex;
+    justify-content:flex-start;
+        
+    flex-direction: column;
+}
+
+.heading{
+   margin-top: 0px;
+  font-size: 1.5rem;
+}
+
+.container{
+margin-top: 10px;
+height: 80%;
+width: 80%;
+gap: 1rem;
+}
+.frontend{
+ gap: 10px;
+}
+
+
+.backend{
+  gap: 10px;
+}
+
+
+
+.framework{
+  gap: 10px;
+}
+
+
+.tool{
+  gap: 10px;
+}
+
+.container h1{
+  font-size: 16px;
+}
+.container li{
+  font-size: 11px;
+}
+
+}

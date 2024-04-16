@@ -1,0 +1,43 @@
+
+.email{
+    background-color:  rgb(61, 198, 11);
+    height: 2.5rem;
+    padding: 5px 20px 5px 20px;
+    border-radius: 4px;
+}
+.email:hover{
+   border:2px solid white;
+}
+.email:active{
+    transform: translateY(2px);
+}
+
+
+@media screen and (max-width: 1024px) { 
+
+    .email{
+        padding: 5px 10px 5px 10px;
+        height: 2rem;
+        font-size: 12px;
+    }
+    
+    }
+
+@media screen and (max-width: 480px) { 
+.content{
+    height: 18rem;
+    width: 15rem;
+    /* position: absolute;
+    left: 20%;
+    top: 10%; */
+}
+.sidebar{
+    display: none;
+}
+.email{
+    padding: 5px 10px 5px 10px;
+    height: 2rem;
+    font-size: 12px;
+}
+
+}

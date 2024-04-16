@@ -1,0 +1,130 @@
+.main{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    /* border: 2px solid gray; */
+}
+.container{
+    width: 60%;
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.education{
+    flex: 50%;
+    background: #191c29;
+    border-radius: 8px;
+    border: 2px solid white;
+    display: flex;
+   flex-direction: column;
+   justify-content: center;
+}
+
+.dit{
+    /* border: 2px solid blue; */
+}
+.dit h2{
+    text-align: center;
+    font-size: 1.3rem;
+    margin-bottom: 5px;
+}
+.dit p {
+    text-align: center;
+    font-size: 0.9rem;
+}
+.dit ul{
+    margin-top: 10px;
+}
+.dit ul li{
+    color: grey;
+    font-size: 0.7rem;
+    text-align: center;
+}
+
+.education h1{
+    color: grey;
+    margin-left: 2rem;
+    font-size:1.5rem;
+}
+
+
+
+.certificate{
+    flex: 50%;
+    background: #191c29;
+    border-radius: 8px;
+    border: 2px solid white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+}
+.certificate .c_heading{
+    color: grey;
+    margin-left: 2rem;
+    font-size:1.5rem;
+}
+.certificateContent{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+
+
+
+@media screen and (max-width: 950px) {
+
+    
+    .container{
+        width: 80%;
+        gap: 1.5rem;
+    }
+  
+    .dit h2{
+        text-align: center;
+        font-size: 1rem;
+        margin-bottom: 5px;
+    }
+    .dit p {
+        text-align: center;
+        font-size: 0.7rem;
+    }
+    .dit ul{
+        margin-top: 5px;
+    }
+    .dit ul li{
+        color: grey;
+        font-size: 0.6rem;
+        text-align: center;
+    }
+    .education{position: relative;}
+    .education h1{
+        position: absolute;
+        top: 10px;
+        margin-left: 0.6rem;
+        font-size:1.2rem;
+    }
+    
+    
+    
+    .certificate{
+         position: relative;
+    }
+    .certificate .c_heading{
+        position: absolute;
+        top: 10px;
+        margin-left: 0.6rem;
+        font-size:1.2rem;
+    }
+    .certificateContent{
+        gap: 5px;
+    }
+
+}
+
+
