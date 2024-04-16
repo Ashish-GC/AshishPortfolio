@@ -30,15 +30,15 @@ function Skill() {
           transition={{duration:1}}
      className={classes.container}>
         <motion.div
-        initial={{
-          x:-300,
-        }}
-        whileInView={
-          {
-            x:0,
-          }
-        }
-         transition={{duration:1}}
+        // initial={{
+        //   x:-300,
+        // }}
+        // whileInView={
+        //   {
+        //     x:0,
+        //   }
+        // }
+        //  transition={{duration:1}}
 
          className={classes.frontend}>
            <h1>Frontend</h1> 
@@ -52,15 +52,15 @@ function Skill() {
            </div>
         </motion.div>
         <motion.div className={classes.backend}
-            initial={{
-              x:300,
-            }}
-            whileInView={
-              {
-                x:0,
-              }
-            }
-             transition={{duration:1}}
+            // initial={{
+            //   x:300,
+            // }}
+            // whileInView={
+            //   {
+            //     x:0,
+            //   }
+            // }
+            //  transition={{duration:1}}
         >
            <h1>Backend</h1> 
            <div className={classes.content}>
@@ -74,15 +74,16 @@ function Skill() {
            </div>
           </motion.div>
            <motion.div className={classes.framework}
-               initial={{
-                x:-300,
-              }}
-              whileInView={
-                {
-                  x:0,
-                }
-              }
-               transition={{duration:1}}>
+              //  initial={{
+              //   x:-300,
+              // }}
+              // whileInView={
+              //   {
+              //     x:0,
+              //   }
+              // }
+              //  transition={{duration:1}}
+              >
            <h1>Frameworks</h1> 
            <div className={classes.content}>
              <ul>
@@ -95,15 +96,15 @@ function Skill() {
            </div>
         </motion.div>
         <motion.div 
-            initial={{
-              x:300,
-            }}
-            whileInView={
-              {
-                x:0,
-              }
-            }
-             transition={{duration:1}}
+            // initial={{
+            //   x:300,
+            // }}
+            // whileInView={
+            //   {
+            //     x:0,
+            //   }
+            // }
+            //  transition={{duration:1}}
         className={classes.tool}>
            <h1>Tools</h1> 
            <div className={classes.content}>
