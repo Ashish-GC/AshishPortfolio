@@ -18,7 +18,7 @@ export default function SimpleSlider() {
   };
   return (
     <Slider {...settings} className={classes.projects}>
-     <Card name="Video Streaming Backend" image={VideoStreaming} description="Backend for a video streaming website ." link="" github="https://github.com/Ashish-GC/VideoStramingBackend.git"/>
+     <Card name="Video Streaming Website" image={VideoStreaming} description="Full Stack Video streaming website ." link="https://video-streaming-frontend-tau.vercel.app/" github="https://github.com/Ashish-GC/VideoStreamingFrontend.git"/>
      <Card name="UniReuse" image={uniReuse} description="A marketplace and financial management app for college students" link="" github="https://github.com/Ashish-GC/WiseWallet.git"/>
      <Card name="Portfolio" image={portfolio} description="A Portfolio website to showcase my projects,skills and education" link="" github=""/>
     </Slider>
